@@ -18,7 +18,7 @@ Este projeto está organizado de acordo com as seguintes estruturas de pastas e 
 
 - **data**
 
-  - Armazena e exporta os arquivos relacionados aos dados que serão utilizados na aplicação Web.
+  - Possui os arquivos que armazenam e exportam dados que serão utilizados na aplicação Web.
 
 - **img**
 
