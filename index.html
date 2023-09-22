@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./img/checkbox-favicon.png" type="image/png" />
+    <title>Bagagem para a Viagem</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+      <div class="title">
+        <h1>🍃Bagagem para a Viagem🌴</h1>
+      </div>
+    </header>
+
+    <section class="travelCategory">
+      <h3>Escolha uma viagem!</h3>
+      <select id="travelTypeSelect">
+        <option value="1">Acampamento</option>
+        <option value="2">AirBnb</option>
+        <option value="3">Casa de Amigo</option>
+        <option value="4">Casa de Campo</option>
+        <option value="5">Casa de Praia</option>
+        <option value="6">Hostel</option>
+        <option value="7">Hotel</option>
+        <option value="8">Resort</option>
+      </select>
+    </section>
+
+    <section class="newItem">
+      <label>Item:</label>
+      <input type="text" id="newInput" placeholder="Qual é o nome?" />
+      <label>Quantidade:</label>
+      <input type="text" id="newQuantity" placeholder="Quantas unidades?" />
+      <label>Categoria:</label>
+      <select id="newCategory">
+        <option value="Geral">🌍 Geral</option>
+        <option value="Comida">🍕 Comida</option>
+        <option value="Documentos">📰 Documentos</option>
+        <option value="Entretenimento">🎸 Entretenimento</option>
+        <option value="Equipamento">🛠️ Equipamento</option>
+        <option value="Finanças">💰 Finanças</option>
+        <option value="Higiene">🚿 Higiene</option>
+        <option value="Saúde">💊 Saúde</option>
+        <option value="Tecnologia">💻 Tecnologia</option>
+        <option value="Vestimenta">👕 Vestimenta</option>
+      </select>
+
+      <span class="addBtn">Adicionar</span>
+    </section>
+
+    <section class="items">
+      <div class="table-container">
+        <table id="myTable" class="table-sortable">
+          <tr class="table-header">
+            <th column-type="emoji-string">Nome</th>
+            <th column-type="integer">Quantidade</th>
+            <th column-type="string">Categoria</th>
+            <th column-type="checkbox">Empacotado</th>
+            <th column-type="delete">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/126/126468.png"
+                width="15px"
+                height="15px"
+              />
+            </th>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="stats">
+      <footer id="itemCounts"></footer>
+    </section>
+
+    <script type="module" src="scripts.js"></script>
+  </body>
+</html>
