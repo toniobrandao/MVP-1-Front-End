@@ -45,7 +45,7 @@ function getTextContent(element) {
 }
 
 function getIntegerTextContent(element) {
-  return parseInt(element.textContent).toString().toLowerCase();
+  return parseInt(element.textContent);
 }
 
 function getIfCheckboxChecked(element) {
