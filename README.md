@@ -10,8 +10,6 @@ O objetivo aqui é ilutsrar o conteúdo apresentado na terceira aula.
 
 Este projeto está organizado de acordo com as seguintes estruturas de pastas e arquivos:
 
-# Organização do Projeto
-
 ## Pastas
 
 - **api**
